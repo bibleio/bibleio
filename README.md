@@ -1,5 +1,7 @@
 ![Banner](.github/assets/gh-org.png)
 
+# we still need to fix some of the structure, almost ready!
+
 Innovation for Christ. We focus on making better, free, open-source, modern Bible consumer tech for God's kingdom, preaching the gospel, and to help churches and communities.
 
 This is the Bibleio monorepo, all the code that powers Bibleio. Here you can find our apps, websites, and back-end stuff.
