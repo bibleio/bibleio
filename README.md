@@ -15,6 +15,7 @@ See more about each project in their README.
 ## Developing
 
 We use Turborepo and pnpm for our monorepo. Here's our main commands:
+
 ```bash
 pnpm webapp dev # web app dev server
 pnpm site dev # website dev server
@@ -26,6 +27,7 @@ pnpm fix # format & lint all files with biome (or rustfmt & clippy)
 # can also access other subcommands
 pnpm site build
 ```
+
 We use [Biome](https://biomejs.dev/) for formatting and linting, please use `pnpm fix` when developing, or [setup your editor to use Biome](https://biomejs.dev/guides/editors/first-party-extensions/).
 
 With Rust projects, we use the standard rustfmt and clippy, which can also be accessed via `pnpm fix` or `pnpm api fix` which works with Turborepo.
@@ -49,6 +51,7 @@ Read more about developer stuff for contributing at [CONTRIBUTING.md](.github/CO
 All of Bibleio's projects are licensed under the [MIT No Attribution](LICENSE.txt) license.
 
 Matthew 10:8
+
 > "Freely you have received; freely give"
 
 Check out why you should do the same by clicking this:

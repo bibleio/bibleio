@@ -1,22 +1,22 @@
 {
-	"$schema": "https://turbo.build/schema.json",
-	"tasks": {
-		"install": {
-			"cache": false
-		},
-		"build": {
-			"dependsOn": ["^build"],
-			"outputs": [".next/**", "!.next/cache/**", "dist/**", "target/release/**"]
-		},
-		"check-types": {
-			"dependsOn": ["^check-types"]
-		},
-		"fix": {
-			"outputs": []
-		},
-		"dev": {
-			"persistent": true,
-			"cache": false
-		}
-	}
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "install": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "target/release/**"]
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "fix": {
+      "outputs": []
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false
+    }
+  }
 }

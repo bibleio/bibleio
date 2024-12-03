@@ -3,101 +3,124 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
-		/* materials */
-		--bg-1: #cccccc;
-		--fg-1: #d4d4d4;
-		--fg-2: #dddddd;
-		--stroke: #00000054;
-		--text: #050505e6;
-		--text-solid: #000000;
-		--text-subtle: #00000054;
-		--text-reversed: #f3f3f3e6;
-		--text-reversed-solid: #ffffff;
-		--text-reversed-subtle: #dedede54;
-		--inner-shadow-1: #ffffff0d;
-		--inner-shadow-2: #0000000f;
-		/* colors */
-		--accent: #1eaeff;
-		--red: #f45252;
-		--orange: #f48b52;
-		--yellow: #fcd05f;
-		--lime: #a4d94e;
-		--green: #4ed97d;
-		--teal: #00bdd2;
-		--blue: #1eaeff;
-		--purple: #ac85f1;
-		--pink: #f185e6;
-		--gray: #eeeeee;
-		/* reversed colors */
-		--accent-reversed: #006197;
-		--red-reversed: #802525;
-		--orange-reversed: #804425;
-		--yellow-reversed: #8d7820;
-		--lime-reversed: #5f8226;
-		--green-reversed: #268245;
-		--teal-reversed: #00707c;
-		--blue-reversed: #006197;
-		--purple-reversed: #4930a5;
-		--pink-reversed: #a53099;
-		--gray-reversed: #5f5f5f;
-	}
-	[class="dark"] {
-		/* materials */
-		--bg-1: #1b1b1b;
-		--fg-1: #212121;
-		--fg-2: #262626;
-		--stroke: #ffffff1a;
-		--text: #f3f3f3e6;
-		--text-solid: #ffffff;
-		--text-subtle: #dedede54;
-		--text-reversed: #000000e6;
-		--text-reversed-solid: #000000;
-		--text-reversed-subtle: #000000e6;
-		--inner-shadow-1: #ffffff08;
-		--inner-shadow-2: #00000026;
-		/* colors */
-		--accent: #006197;
-		--red: #802525;
-		--orange: #804425;
-		--yellow: #8d7820;
-		--lime: #5f8226;
-		--green: #268245;
-		--teal: #00707c;
-		--blue: #006197;
-		--purple: #4930a5;
-		--pink: #a53099;
-		--gray: #5f5f5f;
-		/* reversed colors */
-		--accent-reversed: #1eaeff;
-		--red-reversed: #f45252;
-		--orange-reversed: #f48b52;
-		--yellow-reversed: #fcd05f;
-		--lime-reversed: #a4d94e;
-		--green-reversed: #4ed97d;
-		--teal-reversed: #00bdd2;
-		--blue-reversed: #1eaeff;
-		--purple-reversed: #ac85f1;
-		--pink-reversed: #f185e6;
-		--gray-reversed: #eeeeee;
-	}
+  :root {
+    /* materials */
+    --bg-1: #cccccc;
+    --fg-1: #d4d4d4;
+    --fg-2: #dddddd;
+    --stroke: #00000054;
+    --text: #0c0c0c;
+    --text-paragraph: #202020;
+    --text-solid: #000000;
+    --text-subtle: #00000054;
+    --text-reversed: #f3f3f3e6;
+    --text-reversed-solid: #ffffff;
+    --text-reversed-subtle: #dedede54;
+    --inner-shadow-1: #ffffff0d;
+    --inner-shadow-2: #0000000f;
+    /* colors */
+    --accent: #1eaeff;
+    --red: #f45252;
+    --orange: #f48b52;
+    --yellow: #fcd05f;
+    --lime: #a4d94e;
+    --green: #4ed97d;
+    --teal: #00bdd2;
+    --blue: #1eaeff;
+    --purple: #ac85f1;
+    --pink: #f185e6;
+    --gray: #eeeeee;
+    /* reversed colors */
+    --accent-reversed: #006197;
+    --red-reversed: #802525;
+    --orange-reversed: #804425;
+    --yellow-reversed: #8d7820;
+    --lime-reversed: #5f8226;
+    --green-reversed: #268245;
+    --teal-reversed: #00707c;
+    --blue-reversed: #006197;
+    --purple-reversed: #4930a5;
+    --pink-reversed: #a53099;
+    --gray-reversed: #5f5f5f;
+  }
+  [class="dark"] {
+    /* materials */
+    --bg-1: #1b1b1b;
+    --fg-1: #212121;
+    --fg-2: #262626;
+    --stroke: #ffffff1a;
+    --text: #ececec;
+    --text-paragraph: #d9d9d9;
+    --text-solid: #ffffff;
+    --text-subtle: #dedede54;
+    --text-reversed: #000000e6;
+    --text-reversed-solid: #000000;
+    --text-reversed-subtle: #000000e6;
+    --inner-shadow-1: #ffffff08;
+    --inner-shadow-2: #00000026;
+    /* colors */
+    --accent: #006197;
+    --red: #802525;
+    --orange: #804425;
+    --yellow: #8d7820;
+    --lime: #5f8226;
+    --green: #268245;
+    --teal: #00707c;
+    --blue: #006197;
+    --purple: #4930a5;
+    --pink: #a53099;
+    --gray: #5f5f5f;
+    /* reversed colors */
+    --accent-reversed: #1eaeff;
+    --red-reversed: #f45252;
+    --orange-reversed: #f48b52;
+    --yellow-reversed: #fcd05f;
+    --lime-reversed: #a4d94e;
+    --green-reversed: #4ed97d;
+    --teal-reversed: #00bdd2;
+    --blue-reversed: #1eaeff;
+    --purple-reversed: #ac85f1;
+    --pink-reversed: #f185e6;
+    --gray-reversed: #eeeeee;
+  }
 }
 
 @layer utilities {
-	.hover-color {
-		@apply duration-150 ease-out hover:text-accent-reversed active:text-text;
-	}
-	.hover-transform {
-		@apply duration-150 ease-out hover:-translate-y-2 active:translate-y-2;
-	}
+  .hover-color {
+    @apply duration-150 ease-out hover:text-accent-reversed active:text-text;
+  }
+  .hover-transform {
+    @apply duration-150 ease-out hover:-translate-y-2 active:translate-y-2;
+  }
 }
 
 ::selection {
-	background: var(--accent-reversed);
-	color: var(--text-reversed-solid);
+  background: var(--accent-reversed);
+  color: var(--text-reversed-solid);
 }
 
 ::-moz-selection {
-	background: var(--accent-reversed);
-	color: var(--text-reversed-solid);
+  background: var(--accent-reversed);
+  color: var(--text-reversed-solid);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-subtle);
+  border-radius: 99px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-reversed);
 }

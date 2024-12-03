@@ -11,6 +11,7 @@ Then make a fork, and make meaningful, useful changes or bugfixes.
 View developer docs for working in the monorepo in the [README](../README.md).
 
 Once you think you're done, **please** format all your files and lint them, then fix any errors or warnings if there are any:
+
 ```bash
 # will format & lint
 pnpm fix
